@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CLOCK</title>
+</head>
+
+<script src="script.js" defer></script>
+
+<body>
+    <div class="container">
+    <header>
+        <h1 class="title">Clock APP</h1>
+        <div class="navigator">
+            <a href="index.html" class="nav">Clock</a>
+            <a href="stopwatch.html" class="nav">Stopwatch</a>
+            <a href="timer.html" class="nav actual">Timer</a>
+        </div>
+
+    </header>
+
+    <main>
+        <label class="tag" for="hour">Select time (HH:MM:SS)</label>
+        <div class="numbers">
+          <input type="number" id="hour" min="0" max="23" placeholder="HH">
+          <label class="tag">:</label>
+          <input type="number" id="minute" min="0" max="59" placeholder="MM">
+          <label class="tag">:</label>
+          <input type="number" id="second" min="0" max="59" placeholder="SS">
+        </div>
+
+        <div>
+        <h1 class="timer" id="timer">00:00:00</h1>
+        </div>
+
+        <div>
+            <button id="startBtn">Start</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+      </main>
+      
+    <footer>
+        <h2 class="credits">Created by Unai Garcia Nuñez</h2>
+    </footer>
+    </div>
+</body>
+</html>
